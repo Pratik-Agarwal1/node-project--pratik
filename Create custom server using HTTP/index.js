@@ -3,7 +3,7 @@ const fs = require("fs")
 const server = http.createServer((req, res) => {
 
     if (req.url == "/home") {
-        res.end("<h1>Pratik Agarwal</h1>")
+        res.end("<h1>Home Page</h1>")
     } else if (req.url == "/about") {
         res.end("<h1>this is about page</h1>")
     } else if (req.url == "/getproductdata") {
@@ -30,3 +30,5 @@ const server = http.createServer((req, res) => {
 server.listen(5253, () => {
     console.log("listing  a  Pratik Agarwal")
 })
+
+//http://localhost:5253/home
